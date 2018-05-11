@@ -10,26 +10,10 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    @IBOutlet weak var statusMenu: NSMenu!
-    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-
-    @IBAction func quitClicked(_ sender: NSMenuItem) {
-
-    }
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        let icon = NSImage(imageLiteralResourceName: "statusIcon")
-
-        statusItem.title = "I Lost The Game"
-        statusItem.menu = statusMenu
-        statusItem.image = icon
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
     }
-
-
 }
 
