@@ -11,6 +11,7 @@
 		C6E9252C20A639E8000100E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E9252B20A639E8000100E8 /* Assets.xcassets */; };
 		C6E9252F20A639E8000100E8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6E9252D20A639E8000100E8 /* MainMenu.xib */; };
 		C6E9253820A6469C000100E8 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E9253720A6469C000100E8 /* StatusMenuController.swift */; };
+		C6E9253A20A64F34000100E8 /* GameStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E9253920A64F34000100E8 /* GameStats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		C6E9253020A639E8000100E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6E9253120A639E8000100E8 /* ILostTheGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ILostTheGame.entitlements; sourceTree = "<group>"; };
 		C6E9253720A6469C000100E8 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		C6E9253920A64F34000100E8 /* GameStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				C6E9252920A639E8000100E8 /* AppDelegate.swift */,
 				C6E9253720A6469C000100E8 /* StatusMenuController.swift */,
+				C6E9253920A64F34000100E8 /* GameStats.swift */,
 				C6E9252B20A639E8000100E8 /* Assets.xcassets */,
 				C6E9252D20A639E8000100E8 /* MainMenu.xib */,
 				C6E9253020A639E8000100E8 /* Info.plist */,
@@ -135,6 +138,7 @@
 			files = (
 				C6E9253820A6469C000100E8 /* StatusMenuController.swift in Sources */,
 				C6E9252A20A639E8000100E8 /* AppDelegate.swift in Sources */,
+				C6E9253A20A64F34000100E8 /* GameStats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
