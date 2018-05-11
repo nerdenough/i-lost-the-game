@@ -19,8 +19,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        let icon = NSImage(imageLiteralResourceName: "statusIcon")
+
         statusItem.title = "I Lost The Game"
         statusItem.menu = statusMenu
+        statusItem.image = icon
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
