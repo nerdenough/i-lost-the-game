@@ -1,11 +1,3 @@
-//
-//  StatusMenuController.swift
-//  ILostTheGame
-//
-//  Created by Brendan Goodenough on 12/05/18.
-//  Copyright © 2018 Brendan Goodenough. All rights reserved.
-//
-
 import Cocoa
 
 class StatusMenuController: NSObject {
@@ -15,9 +7,12 @@ class StatusMenuController: NSObject {
     override func awakeFromNib() {
         let icon = NSImage(imageLiteralResourceName: "statusIcon")
 
-        statusItem.title = "I Lost The Game"
         statusItem.menu = statusMenu
         statusItem.image = icon
+    }
+
+    @IBAction func lostTheGameClicked(_ sender: NSMenuItem) {
+        // TODO: Reset streak
     }
 
     @IBAction func quitClicked(_ sender: NSMenuItem) {

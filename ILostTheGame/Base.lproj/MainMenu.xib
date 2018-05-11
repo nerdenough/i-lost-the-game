@@ -20,6 +20,20 @@
         </customObject>
         <menu id="Lln-kU-O6c">
             <items>
+                <menuItem title="I Lost the Game!" id="XmD-St-Q0Q" userLabel="ILostTheGame">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="lostTheGameClicked:" target="DsK-iW-8Bi" id="78S-BB-iMj"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="VmB-mk-svs"/>
+                <menuItem title="Current Streak:" id="8kQ-qo-DRx">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Streak" enabled="NO" id="Mdq-xm-JyT">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="a0G-EG-bWs"/>
                 <menuItem title="Quit" id="SQR-9a-DhW" userLabel="Quit">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
