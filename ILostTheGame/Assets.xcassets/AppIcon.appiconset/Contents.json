@@ -33,25 +33,25 @@
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "gg-256-1x.png",
+      "filename" : "gg_256x256.png",
       "scale" : "1x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "gg-256-2x.png",
+      "filename" : "gg_256x256@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "gg-512-1x.png",
+      "filename" : "gg_512x512.png",
       "scale" : "1x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "gg-512-2x.png",
+      "filename" : "gg_512x512@2x.png",
       "scale" : "2x"
     }
   ],
