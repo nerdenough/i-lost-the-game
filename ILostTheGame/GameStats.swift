@@ -1,14 +1,6 @@
 import Foundation
 
 class GameStats {
-    func formatDuration(elapsed: Int) -> (h: Int, m: Int, s: Int) {
-        let h = elapsed / 3600
-        let m = (elapsed % 3600) / 60
-        let s = (elapsed % 3600) % 60
-
-        return (h, m, s)
-    }
-
     func getCurrentStreak() -> String {
         let interval = UserDefaults.standard.double(forKey: "currentStreakInterval")
 
@@ -19,9 +11,10 @@ class GameStats {
 
         let date = Date(timeIntervalSince1970: interval)
         let elapsed = Date().timeIntervalSince(date)
-        let duration = formatDuration(elapsed: Int(elapsed))
+        let formatter = DateComponentsFormatter()
+        formatter.unitsStyle = .full
 
-        return String(format: "%d hours, %d minutes, %d seconds", duration.h, duration.m, duration.s)
+        return formatter.string(from: elapsed)!
     }
 
     func resetCurrentStreak() {

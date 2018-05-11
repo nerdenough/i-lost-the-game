@@ -15,6 +15,7 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <customObject id="DsK-iW-8Bi" userLabel="StatusMenuController" customClass="StatusMenuController" customModule="ILostTheGame" customModuleProvider="target">
             <connections>
+                <outlet property="currentStreakItem" destination="Mdq-xm-JyT" id="GtX-JO-Cga"/>
                 <outlet property="statusMenu" destination="Lln-kU-O6c" id="8bA-LG-ZLT"/>
             </connections>
         </customObject>

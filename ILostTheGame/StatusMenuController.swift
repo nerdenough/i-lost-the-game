@@ -2,8 +2,10 @@ import Cocoa
 
 class StatusMenuController: NSObject {
     @IBOutlet weak var statusMenu: NSMenu!
+    @IBOutlet weak var currentStreakItem: NSMenuItem!
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     let gameStats = GameStats()
+    var timer = Timer()
 
     override func awakeFromNib() {
         let icon = NSImage(imageLiteralResourceName: "statusIcon")
@@ -12,11 +14,18 @@ class StatusMenuController: NSObject {
         statusItem.image = icon
 
         updateStreak()
+        timer = Timer.scheduledTimer(
+            timeInterval: 5,
+            target: self,
+            selector: #selector(self.updateStreak),
+            userInfo: nil,
+            repeats: true
+        )
     }
 
-    func updateStreak() {
+    @objc func updateStreak() {
         let currentStreak = gameStats.getCurrentStreak()
-        NSLog(String(currentStreak))
+        currentStreakItem.title = currentStreak
     }
 
     @IBAction func lostTheGameClicked(_ sender: NSMenuItem) {
