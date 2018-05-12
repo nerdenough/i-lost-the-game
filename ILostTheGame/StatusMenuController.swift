@@ -15,7 +15,7 @@ class StatusMenuController: NSObject {
 
         updateStreak()
         timer = Timer.scheduledTimer(
-            timeInterval: 5,
+            timeInterval: 1,
             target: self,
             selector: #selector(self.updateStreak),
             userInfo: nil,
